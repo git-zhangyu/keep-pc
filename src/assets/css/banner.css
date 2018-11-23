@@ -1,0 +1,47 @@
+
+
+.banner-wrap{
+  width:750px;
+  height:340px;
+  margin:0 auto;
+  overflow: hidden;
+}
+
+.banner-swiper{
+  width:750px;
+  position: relative;
+}
+.banner-swiper .banner{
+  position: absolute;
+  left:0;
+  top:0;
+  width:750px;
+  opacity:0;
+
+}
+.banner-wrap  .banner-swiper .active{
+
+  opacity: 1;
+  transition: all 1s linear;
+}
+.left-icon{
+  position: absolute;
+  left:20px;
+  top:50%;
+  font-size:20px;
+}
+.right-icon{
+  position: absolute;
+  right:20px;
+  top:50%;
+  font-size:20px;
+}
+
+
+
+
+
+
+
+
+/**/

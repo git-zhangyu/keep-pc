@@ -1,0 +1,383 @@
+
+body{
+  background:#fafafa;
+}
+.divider{
+  height:15px;
+  background: #fafafa;
+}
+#c-navbar ul li a:hover{
+  color:#ccc;
+  text-shadow: 0 0 20px pink;
+}
+
+
+.keep-content{
+  margin:0 auto;
+  width:768px;
+  background: #fff;
+}
+/*用户信息*/
+.user-top{
+  height:130px;
+  background-size:cover;
+  background-position: center;
+}
+.user-head{
+  position: relative;
+  min-height:75px;
+}
+.user-head .user-avatar{
+  display:inline-block;
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: 100%;
+  position: absolute;
+  top:-20px;
+  left:20px;
+}
+.user-head .user-avatar .gender-img{
+  position:absolute;
+  bottom:0;
+  right:0;
+  width:23px;
+  border-radius: 50%;
+}
+.user-head .follow-btns{
+  float:right;
+  margin:25px 20px 20px;
+}
+.user-head .follow-btns button{
+  width:90px;
+  height:40px;
+  color:#fff;
+  border-radius:20px;
+  border:1px solid #ddd;
+}
+.user-head .follow-btns .follow{
+  background:#584f60;
+}
+.user-head .follow-btns .has-followed,.follow-each-other {
+  background-color: #00D087;
+}
+.follow-hide{
+  display:none;
+}
+.user-info{
+  padding:25px 15px 0;
+}
+.user-info .user-name{
+  font-size:24px;
+  font-weight:bold;
+  margin-bottom:20px;
+  color:#333;
+}
+.user-info .user-desc{
+  font-size:12px;
+  line-height: 14px;
+  margin-bottom:20px;
+  color:#666;
+}
+.user-info .user-desc .user-vip{
+  margin-bottom:10px;
+}
+.user-info .user-desc .user-vip img{
+  width:12px;
+  margin-right:5px;
+}
+.user-info .user-city{
+  margin-bottom:20px;
+  font-size:12px;
+  line-height:14px;
+  color:#999;
+}
+.user-data{
+  overflow: hidden;
+  text-align: center;
+  padding:15px
+}
+.user-data .followed-block{
+  float:left;
+}
+.user-data .entry-block{
+  float:right;
+}
+.user-data .number{
+  font-size:24px;
+}
+.user-data .desc{
+  font-size:12px;
+  color:#999;
+}
+.user-data .followed-block .desc{
+  text-align: left;
+}
+.user-data .entry-block .desc{
+  text-align: right;
+}
+.user-training{
+  padding:25px 15px;
+}
+.user-training .training-level{
+  height:60px;
+}
+.user-training .training-level .level-val{
+  color:#24c789;
+  font-size:30px;
+  font-weight:700;
+  font-style:italic;
+}
+.user-training .training-level .level-title{
+  font-size:14px;
+  display:inline-block;
+  margin:0 6px;
+  color:#584f60;
+}
+.user-training .training-level .level-subtitle{
+  float:right;
+  font-size:14px;
+  height:60px;
+  color:#999;
+  margin-top:15px;
+}
+.user-training .level-bar{
+  height:7px;
+  background:#efefef;
+  border-radius: 4px;
+  margin-bottom:25px;
+}
+.user-training .level-bar .level-bar-val{
+  width:75%;
+  height:7px;
+  background:#24c789;
+  border-radius: 4px;
+}
+.user-training .level-slide{
+  display: inline-block;
+  margin-left:15px;
+}
+.level-slide .circle-wrap{
+  width:70px;
+  height:70px;
+  position: relative;
+}
+.level-slide .circle-wrap .circle-title{
+  position: absolute;
+  top:19px;
+  left:2px;
+  font-size:20px;
+  font-weight:bold;
+  font-style: italic;
+}
+.level-slide .circle-wrap canvas{
+  position: absolute;
+  left:0;
+  top:0;
+}
+.level-slide .level-name{
+  font-size:14px;
+  color:#584f60;
+  margin:10px 20px 0;
+}
+.level-slide .level-current-val{
+  font-size:12px;
+  color:#999;
+  margin:5px 10px 0;
+}
+.user-achievement{
+  border-top:1px solid #efefef;
+  padding:25px 0;
+}
+.user-achievement .achivement-title{
+  font-size:18px;
+  margin:0 15px 20px;
+}
+.user-achievement .achivement-swiper .achivement-slide{
+  display:inline-block;
+  margin-left:15px;
+}
+.user-achievement .achivement-swiper .achivement-slide img{
+  height:45px;
+}
+.user-achievement .achivement-swiper .achivement-slide img:hover{
+  animation:imgRotate 1s linear;
+  animation-fill-mode: forwards;
+}
+@keyframes imgRotate{
+  0%{
+    transform: rotate(0) scale(1);
+  }
+  15%{
+    transform: rotate(-10deg) scale(1.1);
+  }
+  30%{
+    transform: rotate(0) scale(1.1);
+  }
+  45%{
+    transform: rotate(10deg) scale(1.1);
+  }
+  60%{
+    transform: rotate(0) scale(1.2);
+  }
+  70%{
+    transform: rotate(-10deg) scale(1.2);
+  }
+  80%{
+    transform: rotate(0) scale(1.2);
+  }
+  90%{
+    transform: rotate(10deg) scale(1.2);
+  }
+  100%{
+    transform: rotate(0) scale(1.3);
+  }
+}
+/*热点*/
+.user-photo-wrapper .row{
+  margin:0;
+}
+.user-photo-wrapper .user-hot, .user-photo-wrapper .user-photo{
+  padding-top:20px;
+}
+.user-photo-wrapper .user-hot .hot-title{
+  padding:15px;
+}
+
+.user-photo-wrapper .user-hot .hot-img a i{
+  background-image: url(../img/tools/hot.png);
+  width:20px;
+  height:20px;
+  background-size: cover;
+  display: inline-block;
+  position: absolute;
+  left:30px;
+  bottom:15px;
+}
+.user-photo-wrapper .user-hot .hot-img a span{
+  position: absolute;
+  left:60px;
+  bottom:15px;
+  font-size:14px;
+  color:#fff;
+  font-weight: bold;
+}
+.user-photo-wrapper .user-hot .hot-img img{
+  width:100%;
+  height:100%;
+  box-shadow: 5px 5px 5px #ccc;
+  transition:all .5s linear;
+}
+.user-photo-wrapper .user-hot .hot-img img:hover{
+  transform: scale(1.05)
+}
+
+/*照片*/
+.user-photo-wrapper .user-photo .photo-title{
+  padding:15px;
+}
+.user-photo-wrapper .user-photo .photo-img{
+  padding:5px;
+}
+.user-photo-wrapper .user-photo .photo-img img{
+  width:100%;
+  height:90%;
+  transition:all .5s linear;
+}
+.user-photo-wrapper .user-photo .photo-img img:hover{
+  transform: scale(1.05)
+}
+.user-photo-wrapper .user-photo .photo-img .col-md-2{
+  padding:0 5px;
+}
+
+/*运动日记*/
+.training-diary .diary-head{
+  padding:25px 20px;
+  font-size:18px;
+}
+.training-diary .get-more{
+  float:right;
+  text-align: center;
+  margin-right:20px;
+  color:#ccc;
+}
+.training-diary .diary-block{
+  margin-left:50px;
+  border-top:1px solid rgba(0,0,0, .1);
+}
+.training-diary .diary-block .diary-day{
+  height:70px;
+  line-height:70px;
+  color:#333;
+  font-weight:bold;
+  display:block;
+}
+.diary-block .traing-diary .diary-img{
+  width:30px;
+  vertical-align: top;
+}
+.diary-block .traing-diary .traing-diary-wrapper{
+  display:inline-block;
+  max-width: 80%;
+  margin-left:10px;
+  padding:5px 10px 30px 0;
+}
+.diary-block .traing-diary .traing-diary-wrapper .diary-title{
+  font-size:14px;
+  padding-bottom:15px;
+}
+.diary-block .traing-diary .traing-diary-wrapper .diary-desc{
+  font-size:14px;
+  color:#999;
+  display:-webkit-box;
+  overflow:hidden;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:1;
+  white-space: pre-line;
+  margin-bottom:15px;
+}
+.diary-block .traing-diary .traing-diary-wrapper .diary-photo img{
+  width:250px;
+}
+.diary-block .traing-diary .traing-diary-wrapper .location{
+  margin-top:20px;
+  color:#999;
+  position: relative;
+}
+.diary-block .traing-diary .traing-diary-wrapper .location img{
+  width:17px;
+  position: absolute;
+  top:0;
+  left:0;
+  animation: locationJump .7s linear infinite alternate;
+}
+@keyframes locationJump{
+  from{
+    top:-5px;
+  }
+  to{
+    top:0px;
+  }
+}
+.traing-diary-wrapper .location span{
+  display: inline-block;
+  margin-left:25px;
+
+}
+
+@media screen and (max-width:767px){
+  .keep-content{
+    margin:0 auto;
+    width:100%;
+  }
+}
+
+
+
+
+
+
+
+/**/

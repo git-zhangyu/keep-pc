@@ -1,0 +1,181 @@
+/*header*/
+
+.keep-header-wrapper{
+  width:768px;
+  margin:0 auto;
+}
+/*
+.navbar{
+  background: #4d4654;
+}
+#c-navbar ul li a{
+  color:#fff;
+}*/
+
+a{
+  color:#fff;
+}
+/*header*/
+.keep-header{
+  position: fixed;
+  width:100%;
+  z-index:200;
+  padding:0 50px;
+}
+.header-color{
+  background: #584f60;
+}
+
+/*width:767px以上*/
+.keep-header .nav-wrapper{
+  z-index:1;
+  top:0;
+  height:60px;
+  width:100%;
+}
+.head-left{
+  float:left;
+  height:60px;
+  line-height: 60px;
+  padding:0 20px;
+}
+.head-right{
+  float:right;
+  height:60px;
+}
+.head-right .nav-pc{
+  display:inline-block;
+  position: relative;
+  text-align: center;
+  height:60px;
+  line-height: 60px;
+}
+.head-right  .headLogin{
+  position: relative;
+}
+.head-right  .headLogin:hover .userInfo{
+  display:block;
+}
+.head-right  .headLogin .userInfo{
+  position: absolute;
+  left:-18px; 
+  top:59px;
+  height:80px;
+  line-height:80px;
+  background: #584f60;
+  color:pink;
+  font-size:14px;
+  width:100px;
+  border-radius: 3px;
+  display: none;
+}
+.head-right  .headLogin .userInfo a{
+  height:40px;
+  line-height: 40px;
+  display: block;
+  color:#fff;
+  border-bottom:1px solid #ddd;
+}
+.head-right  .headLogin .userInfo a:last-child{
+  border:0;
+}
+
+.head-right .social-media{
+  display:inline-block;
+  position: relative;
+  margin-left:15px;
+}
+.head-right .nav-pc>a{
+  font-size:14px;
+  color:#fff;
+  margin:0 22px;
+  line-height: 60px;
+  display:inline-block;
+}
+.head-right .nav-pc .headLogin{
+  font-size:14px;
+  color:#fff;
+  margin:0 22px;
+  line-height: 60px;
+  display:inline-block;
+  cursor: pointer;
+}
+.head-right .nav-pc>span{
+  font-size:14px;
+  color:#fff;
+  margin:0 22px;
+  line-height: 60px;
+  display:inline-block;
+}
+.head-right .social-media>a{
+  margin-left:20px;
+  position: relative;
+  display: inline-block;
+  width:24px;
+  height:24px;
+  line-height:24px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.4);
+  text-align: center;
+}
+.keep-header .nav-wrapper-more.active{
+  background: #584f60;
+  padding:0;
+}
+.keep-header .nav-wrapper-more{
+  display:none;
+}
+/*width小于767px*/
+.keep-header .nav-wrapper-more{
+  padding:28px;
+  position: fixed;
+  z-index:1;
+  top:0;
+  width:100%;
+  background: #584f60;
+}
+.nav-wrapper-more .nav-keep-link{
+  width:112px;
+  height:36px;
+  position: absolute;
+  left:50%;
+  margin-left:-56px;
+}
+.nav-wrapper-more .icon-menu{
+  width:25px;
+}
+.nav-wrapper-more .icon-menu span{
+  color:#fff;
+  cursor: pointer;
+}
+.nav-wrapper-more .keep-tab-wrapper{
+  width:100%;
+  background: #584f60;
+  position: absolute;
+  top:0;
+  left:0;
+}
+.keep-tab-wrapper .icon-close{
+  color:#fff;
+  height:40px;
+  position: relative;
+}
+.keep-tab-wrapper .icon-close span{
+  position: absolute;
+  top:10px;
+  right:20px;
+  cursor: pointer;
+}
+.keep-tab-wrapper .social-media-list{
+  text-align: center;
+  background: #4d4654;
+}
+.keep-tab-wrapper .social-media-list a{
+  display: block;
+  color:#fff;
+  border-top:1px solid #584f60;
+  height:76px;
+  line-height: 76px;
+}
+
+/*header-fluid*/
